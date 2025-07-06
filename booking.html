@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maktabada Qaranka - Guest Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="images/favicon.png"/>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <h1>Maktabada Qaranka</h1>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Hoyga</a></li>
+          <li><a href="gallery.html">Gallery & Data</a></li>
+          <li><a href="booking.html" class="active">Guest Booking</a></li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 3rem 0;">
+    <section class="hero-content">
+      <h2>Guest Booking</h2>
+      <p>Fadlan buuxi foomka hoose si aad ugu booqato maktabada qaranka.</p>
+    </section>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Macluumaadka Shakhsiyeed</legend>
+
+        <label for="name">Magaca *</label>
+        <input type="text" id="name" name="name" placeholder="Magacaaga" required />
+
+        <label for="major">Qaybta Waxbarashada *</label>
+        <select id="major" name="major" required>
+          <option value="">--Dooro Qaybta--</option>
+          <option value="IT">IT</option>
+          <option value="Management">Management</option>
+          <option value="Education">Education</option>
+          <option value="Medicine">Medicine</option>
+        </select>
+
+        <fieldset>
+          <legend>Jinsiga *</legend>
+          <label><input type="radio" name="gender" value="male" required /> Lab</label>
+          <label><input type="radio" name="gender" value="female" required /> Dhedig</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Hiwaayadaha</legend>
+          <label><input type="checkbox" name="hobbies" value="Akhris" /> Akhris</label>
+          <label><input type="checkbox" name="hobbies" value="Cilmi Baaris" /> Cilmi Baaris</label>
+          <label><input type="checkbox" name="hobbies" value="Qorista" /> Qorista</label>
+        </fieldset>
+
+        <label for="comments">Fikradahaaga</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Halkan ku qor faallooyinkaaga..."></textarea>
+
+        <button type="submit">Gudbi Foomka</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Maktabada Qaranka. Dhamaan xuquuqda way dhowrsan yihiin.</p>
+    </div>
+  </footer>
+</body>
+</html>
